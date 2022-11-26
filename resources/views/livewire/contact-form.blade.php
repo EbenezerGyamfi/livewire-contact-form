@@ -1,6 +1,19 @@
 <div>
  
            <form wire:submit.prevent='saveContact' class="space-y-4">
+                <div>
+
+                    @if (session()->has('message'))
+
+                        <div class="alert alert-success">
+
+                            {{ session('message') }}
+
+                        </div>
+
+                    @endif
+
+                 </div>
             <div>
                 <x-jet-label for="name" value="{{ __('Name') }}" />
                 <x-jet-input wire:model='name' name="name" id="name" type="text" />
