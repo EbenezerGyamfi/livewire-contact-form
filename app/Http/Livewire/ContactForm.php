@@ -10,12 +10,18 @@ class ContactForm extends Component
     public $email;
     public $message;
 
+    protected $rules = [
+        'name' => 'required'
+    ];
+
     public function render()
     {
         return view('livewire.contact-form');
     }
 
     public function saveContact(){
-        dd("ok");
+        $this->validate();
+
+        dd("validated");
     }
 }
