@@ -11,7 +11,9 @@ class ContactForm extends Component
     public $message;
 
     protected $rules = [
-        'name' => 'required'
+        'name' => 'required',
+        'email' => 'required',
+        'message' => 'required'
     ];
 
     public function render()

@@ -16,7 +16,7 @@
             <div>
                 <x-jet-label for="message" value="{{ __('Message') }}" />
                 <textarea class="w-full" wire:model='message' name="message" id="" cols="30" rows="10"></textarea>
-                <x-jet-input-error for='body' />
+                <x-jet-input-error for='message' />
             </div>
 
             <x-jet-button type="submit" class="mt-5">
