@@ -33,6 +33,9 @@
             </div>
 
             <x-jet-button type="submit" class="mt-5">
+                <div wire:target='saveContact' wire:loading class="mr-2">
+                    <span>loading...</span>
+                </div>
                 {{ _('Send') }}
             </x-jet-button>
         </form>
